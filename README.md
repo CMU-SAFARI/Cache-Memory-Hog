@@ -10,7 +10,7 @@ Affiliation: Carnegie Mellon University
 
 These cache and memory hog programs have been designed to hog cache capacity and main memory bandwidth. They do so by generating accesses to memory locations that are most likely to occupy specific cache locations. Hence, they tend to evict already present data in the cache.
 
-These programs are used to construct Figure 1 in Section 3 of the ["Application Slowdown Model"](https://users.ece.cmu.edu/~omutlu/pub/application-slowdown-model_micro15.pdf) paper by Subramanian et al., MICRO 2015.  
+These programs are used to construct Figure 1 in Section 3 of ["The Application Slowdown Model"](https://users.ece.cmu.edu/~omutlu/pub/application-slowdown-model_micro15.pdf) paper by Subramanian et al., MICRO 2015.  
 
 Please cite the following [work](https://users.ece.cmu.edu/~omutlu/pub/application-slowdown-model_micro15.pdf) if you use these programs for experiments in your research:
 
@@ -46,7 +46,7 @@ This program generates a streaming pattern of requests. The goal is to touch all
 cache_miss_random.c
 -------------------
 
-This program randomly selects a position and accesses the array element corresponding to that location in a large array. The goal is to access and evict existing cache blocks spread across the cache. We hope to achieve this with a random access pattern since all sets and ways of the cache have an equal probability of being accessed with such a random access pattern..
+This program randomly selects a position and accesses the array element corresponding to that location in a large array. The goal is to access and evict existing cache blocks spread across the cache. We hope to achieve this with a random access pattern since all sets and ways of the cache have an equal probability of being accessed with such a random access pattern.
 
 
 cache_bank_parallelism.c
